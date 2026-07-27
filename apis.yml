@@ -1,8 +1,26 @@
 aid: friendtech
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/friendtech.png
 name: Friend.tech
-description: 'Friend.tech is a company surfaced as a portfolio company of paradigm and added to the API
-  Evangelist network as a stub for enrichment. Sector: crypto-social. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Friend.tech is a decentralized social application built on Base, Coinbase''s
+  Ethereum layer-2 network, that lets users tokenize their social graph by buying and selling
+  "keys" (originally "shares") which grant access to private chat rooms and gated content with
+  individual creators. Launched in August 2023 and backed by Paradigm, a key''s price rose as
+  more people bought into a given creator. In 2024 the team disabled protocol fees and
+  relinquished control of the on-chain smart contracts to the community. Friend.tech operates a
+  live web frontend (www.friend.tech) but publishes no public developer portal, API reference,
+  SDK, or OpenAPI definition; this profile was surfaced as a Paradigm portfolio company and
+  enriched with the real signals available (live-site domain security posture).'
 url: https://raw.githubusercontent.com/api-evangelist/friendtech/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Crypto Social
+- Web3
+- Blockchain
+- Base
+- Social
+- DeFi
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/friendtech-domain-security.yml
 - type: Website
   url: https://www.friend.tech
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
